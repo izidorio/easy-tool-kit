@@ -1,5 +1,5 @@
 appId: com.easy.app
-productName: Easy App
+productName: Easy Tool Kit
 directories:
   buildResources: build
 files:
@@ -12,7 +12,7 @@ files:
 asarUnpack:
   - resources/**
 win:
-  executableName: easy-app
+  executableName: easy-tool-kit
   icon: build/icon.ico
 nsis:
   artifactName: ${name}-${version}-setup.${ext}

@@ -1,14 +1,14 @@
 {
-  "name": "easy",
+  "name": "easy-tool-kit",
   "version": "0.1.5",
-  "description": "Ajudante para extração de nuvem",
+  "description": "Kit de ferramentas para gerenciar o download a descriptografia e processo de indexação de evidências.",
   "main": "./out/main/index.js",
   "author": {
     "name": "Bento, Izidorio",
     "email": "izidorio@bento.dev.br",
     "url": "https://izidorio.github.io/helper-app/"
   },
-  "homepage": "https://bentoizidorio.github.io/helper-app/",
+  "homepage": "https://github.com/izidorio/easy-tool-kit/",
   "scripts": {
     "format": "prettier --write .",
     "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",

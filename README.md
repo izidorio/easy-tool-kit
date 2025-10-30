@@ -2,6 +2,8 @@
 
 Kit de ferramentas para gerenciar o download a descriptografia e processo de indexação de evidências.
 
+baixar https://github.com/izidorio/easy-tool-kit/releases/download/v0.1.5/easy-tool-kit-v0.1.5.zip
+
 ## Recommended IDE Setup
 
 - [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
