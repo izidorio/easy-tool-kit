@@ -1,0 +1,14 @@
+{
+  "style": "new-york",
+  "rsc": true,
+  "tailwind": {
+    "config": "src/renderer/tailwind.config.js",
+    "css": "src/renderer/src/styles/global.css",
+    "baseColor": "slate",
+    "cssVariables": true
+  },
+  "aliases": {
+    "components": "@/renderer/src/components",
+    "utils": "@renderer/lib/utils"
+  }
+}

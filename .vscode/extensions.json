@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "gruntfuggly.todo-tree",
+    "bradlc.vscode-tailwindcss",
+    "mtxr.sqltools-driver-sqlite",
+    "esbenp.prettier-vscode"
+  ]
+}
