@@ -26,6 +26,6 @@ export async function unzipFile(filePath: string): Promise<string> {
     console.error(
       `Erro ao descompactar o arquivo: ${filePath}. Mensagem: ${error.message}`
     );
-    return "Erro";
+    throw new Error(`Erro ao descompactar o arquivo: ${error.message}`);
   }
 }

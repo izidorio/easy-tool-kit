@@ -40,5 +40,6 @@ export async function decryptFile(
   } catch (error: any) {
     sendLog(`erro ao descriptografar o arquivo: ${error.message}`);
     console.error('Erro ao descriptografar o arquivo:', error.message);
+    throw new Error(`Erro ao descriptografar o arquivo: ${error.message}`);
   }
 }

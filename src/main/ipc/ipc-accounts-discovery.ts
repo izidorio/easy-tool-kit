@@ -29,12 +29,24 @@ ipcMain.handle(
         const OUTPUT_DIR = join(data.output_dir, "arquivo_de_producao");
         createDirectoryIfNotExists(OUTPUT_DIR);
 
-        await downloadLink(data.download_link, join(OUTPUT_DIR, "producao.gpg"));
+        try {
+          await downloadLink(data.download_link, join(OUTPUT_DIR, "producao.gpg"));
+        } catch (error: any) {
+          return new Error(`Erro ao baixar o arquivo: ${error.message}`);
+        }
 
         // descriptografar o arquivo
-        await decryptFile(join(data.output_dir, "arquivo_de_producao/producao.gpg"), join(data.output_dir, "arquivo_de_producao/producao"), data.password);
+        try {
+          await decryptFile(join(data.output_dir, "arquivo_de_producao/producao.gpg"), join(data.output_dir, "arquivo_de_producao/producao"), data.password);
+        } catch (error: any) {
+          return new Error(`Erro ao descriptografar o arquivo baixado: ${error.message}`);
+        }
 
-        await unzipFile(join(data.output_dir, "arquivo_de_producao/producao.zip"));
+        try {
+          await unzipFile(join(data.output_dir, "arquivo_de_producao/producao.zip"));
+        } catch (error: any) {
+          return new Error(`Erro ao descompactar o arquivo descriptografado: ${error.message}`);
+        }
 
         //descobrir o nome do aquivo de procucao dentro da pasta /Account_Data_Links/...-account-download-details.csv
 
