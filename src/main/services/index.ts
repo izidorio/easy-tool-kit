@@ -17,3 +17,4 @@ export * from './send-logs';
 export * from './send-progress';
 export * from './create-directory';
 export * from './read-csv';
+export * from './discover-file-name-production';

@@ -126,6 +126,13 @@ export async function openDb(): Promise<Database> {
       await db.exec(`ALTER TABLE clouds ADD COLUMN cloud_size TEXT`);
       console.log('Coluna cloud_size adicionada à tabela clouds');
     }
+
+    // verifica se existe a coluna download_link na tabela clouds
+    const hasLinkColumn = tableCloudsInfo.some((column) => column.name === 'download_link');
+    if (!hasLinkColumn) {
+      await db.exec(`ALTER TABLE clouds ADD COLUMN download_link TEXT`);
+      console.log('Coluna link adicionada à tabela clouds');
+    }
   } catch (error) {
     console.error('Erro ao abrir ou inicializar o banco de dados:', error);
     throw error; // Propaga o erro para que ele possa ser tratado em um nível superior

@@ -9,7 +9,7 @@ import { downloadLink } from '../services/download-link';
 import { join } from 'node:path';
 import { decryptFile } from '../services/decrypt-file';
 import { unzipFile } from '../services/unzip-file';
-import { addAccount, createDirectoryIfNotExists, readExcelCell, removeFiles } from '../services';
+import { addAccount, createDirectoryIfNotExists, discoverFileNameProduction, readExcelCell, removeFiles } from '../services';
 import { getTotalSizeAccount } from '../services/get-total-size-account';
 import { getTotalSizeCloud } from '../services/get-total-size-cloud';
 
@@ -19,13 +19,28 @@ ipcMain.handle(
     try {
       const db = await openDb();
 
+      
       const result = await db.run(
-        'UPDATE clouds SET name=?, password=?, csv_links=?, output_dir=?, status=? WHERE id=?;',
-        [data.name, data.password, data.csv_links, data.output_dir, data.status, id]
+        'UPDATE clouds SET name=?, download_link=?, password=?, csv_links=?, output_dir=?, status=? WHERE id=?;',
+        [data.name, data.download_link, data.password, data.csv_links, data.output_dir, data.status, id]
       );
 
       if (data.reset) {
-        const csvLinks = await readCSV<Link>(data.csv_links);
+        const OUTPUT_DIR = join(data.output_dir, "arquivo_de_producao");
+        createDirectoryIfNotExists(OUTPUT_DIR);
+
+        await downloadLink(data.download_link, join(OUTPUT_DIR, "producao.gpg"));
+
+        // descriptografar o arquivo
+        await decryptFile(join(data.output_dir, "arquivo_de_producao/producao.gpg"), join(data.output_dir, "arquivo_de_producao/producao"), data.password);
+
+        await unzipFile(join(data.output_dir, "arquivo_de_producao/producao.zip"));
+
+        //descobrir o nome do aquivo de procucao dentro da pasta /Account_Data_Links/...-account-download-details.csv
+
+        const _file_production_name = await discoverFileNameProduction(join(data.output_dir, "arquivo_de_producao"));
+
+        const csvLinks = await readCSV<Link>(_file_production_name);
         await addLinks(csvLinks, id);
         const accountsLinks = await getAccountsByCloudId(id);
         createDirectoryIfNotExists(join(data.output_dir, 'accounts'));

@@ -16,8 +16,9 @@ import * as Layout from '@renderer/components/layouts';
 
 const FormSchema = z.object({
   name: z.string(),
+  download_link: z.string(),
   password: z.string().min(1, 'a senha é obrigatória'),
-  csv_links: z.string().min(1, 'o arquivo .csv é obrigatório'),
+  // csv_links: z.string().min(1, 'o arquivo .csv é obrigatório'),
   output_dir: z
     .string()
     .min(1, 'o diretório onde os downloads serão salvos é obrigatório')
@@ -72,15 +73,15 @@ export function Cloud() {
     }
   }, [error]);
 
-  const handleSelectFile = async () => {
-    const path = await window.api.selectFile([{ name: 'csv', extensions: ['csv'] }]);
-    if (path) {
-      methods.setValue('csv_links', path);
-      return;
-    }
+  // const handleSelectFile = async () => {
+  //   const path = await window.api.selectFile([{ name: 'csv', extensions: ['csv'] }]);
+  //   if (path) {
+  //     methods.setValue('csv_links', path);
+  //     return;
+  //   }
 
-    methods.setValue('csv_links', '');
-  };
+  //   methods.setValue('csv_links', '');
+  // };
 
   const handleSelectDirectoryOutput = async () => {
     const path = await window.api.selectDirectory();
@@ -133,9 +134,20 @@ export function Cloud() {
           <FormProvider {...methods}>
             <form onSubmit={methods.handleSubmit(onSubmit)} className="grid h-fit w-full grid-cols-12 gap-4">
               <Input name="name" label="Nome da nuvem" className="col-span-6" />
+              <Input
+                name="output_dir"
+                readOnly
+                label="Pasta destino (NÃO UTILIZE ESPAÇOS no nome da pasta)"
+                className="col-span-6"
+                placeholder="click aqui para selecionar"
+                onClick={handleSelectDirectoryOutput}
+              />
+
+
+              <Input name="download_link" type="url" label="Link de download da nuvem" className="col-span-6" />
               <PasswordInput name="password" label="Senha para descriptografar" className="col-span-6" />
 
-              <Input
+              {/* <Input
                 name="csv_links"
                 label='Selecione o arquivo "account-download-details.csv" com os links'
                 readOnly
@@ -143,14 +155,7 @@ export function Cloud() {
                 placeholder="click aqui para selecionar"
                 onClick={handleSelectFile}
               />
-              <Input
-                name="output_dir"
-                readOnly
-                label="Selecione a pasta para salvar os downloads NÃO UTILIZE ESPAÇOS no nome da pasta"
-                className="col-span-full"
-                placeholder="click aqui para selecionar"
-                onClick={handleSelectDirectoryOutput}
-              />
+              */}
 
               <div
                 className="col-span-12 flex items-center pt-1 data-[show=false]:hidden"
