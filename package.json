@@ -1,6 +1,6 @@
 {
   "name": "easy-tool-kit",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Kit de ferramentas para gerenciar o download a descriptografia e processo de indexação de evidências.",
   "main": "./out/main/index.js",
   "author": {
