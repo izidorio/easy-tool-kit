@@ -19,16 +19,16 @@ abra o Powershell e execute o comando abaixo para instalar o Git Bash: `winget i
 
 > Você vai precisar do IPED. Caso você não tenha o IPED instalado siga o [tutoria da AFD clicando aqui](https://academiadeforensedigital.com.br/sistema-iped-forense/)
 
-<video src="./assests/01-configuracao.mp4" width="400" controls ></video/>
+<img src="./assests/01-configuracao.gif" width="400" />
 
 5 - Criar nuvem
-<video src="./assests/02-criar-nuvem.mp4" width="400" controls > <video/>
+<img src="./assests/02-criar-nuvem.gif" width="400" />
 
 6 - Nomear alvo
-<video src="./assests/03-criar-nuvem.mp4" width="400" controls > <video/>
+<img src="./assests/03-criar-nuvem.gif" width="400" />
 
 7 - Baixar nuvem
-<video src="./assests/04-criar-nuvem.mp4" width="400" controls > <video/>
+<img src="./assests/04-criar-nuvem.gif" width="400" />
 
 8 - Indexar nuvem com o IPED
-<video src="./assests/05-criar-nuvem.mp4" width="400" controls > <video/>
+<img src="./assests/05-criar-nuvem.gif" width="400" />
