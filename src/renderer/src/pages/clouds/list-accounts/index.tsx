@@ -8,6 +8,7 @@ import { DialogTarget } from './dialog-target';
 import * as Layout from '@renderer/components/layouts';
 import { formatBytes } from '@/renderer/src/lib/utils';
 
+
 function parseToKb(size: string): number {
   try {
     const cleanSize = size.trim().toUpperCase();
@@ -29,6 +30,7 @@ function parseToKb(size: string): number {
 
 export function ListAccounts() {
   const { cloud_id } = useParams();
+ 
 
   const { data: accounts = [], isLoading } = useQuery({
     queryKey: ['accounts', cloud_id],
@@ -51,7 +53,7 @@ export function ListAccounts() {
 
   return (
     <Layout.Root>
-      <Layout.Breadcrumb
+      <Layout.Breadcrumb 
         links={[
           { name: 'Lista de nuvens', href: '/' },
           { name: `${cloudName} - ${formatBytes(Number(totalSize || '0'))}`, href: '#' },

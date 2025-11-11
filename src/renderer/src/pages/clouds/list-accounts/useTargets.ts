@@ -13,6 +13,8 @@ type TargetStore = {
   isDialogOpen: boolean;
   isLoading: boolean;
   error: string | null;
+  blurColumn: boolean;
+  setBlurColumn: (blur: boolean) => void;
   setSelectedTarget: (target: Target | null) => void;
   setIsDialogOpen: (isOpen: boolean) => void;
   setIsLoading: (isLoading: boolean) => void;
@@ -28,6 +30,8 @@ const initialState = {
 
 export const useState = create<TargetStore>((set) => ({
   ...initialState,
+  blurColumn: false,
+  setBlurColumn: (blur) => set({ blurColumn: blur }),
   setSelectedTarget: (target) => set({ selectedTarget: target }),
   setIsDialogOpen: (isOpen) => set({ isDialogOpen: isOpen }),
   setIsLoading: (isLoading) => set({ isLoading }),
@@ -64,6 +68,8 @@ export const useTarget = () => {
     setSelectedTarget,
     setIsDialogOpen,
     setIsLoading,
+    setBlurColumn,
+    blurColumn,
   } = useState();
 
   const methods = useForm<FormValues>({
@@ -121,5 +127,7 @@ export const useTarget = () => {
     methods,
     onSubmit,
     resetValue,
+    setBlurColumn,
+    blurColumn,
   };
 };

@@ -44,6 +44,11 @@ interface HandleIpedProps {
   ds_id: string;
 }
 
+function BlurColumn({ text }: { text: string }) {
+  const { blurColumn } = useTarget();
+  return <span className={`text-md ${blurColumn ? 'blur-sm' : ''}`}>{text}</span>;
+}
+
 export const columns: ColumnDef<Account>[] = [
   {
     accessorKey: 'status',
@@ -167,7 +172,9 @@ export const columns: ColumnDef<Account>[] = [
     cell: ({ row }) => {
       return (
         <div className="flex items-center">
-          <CopyToClipboard>{row.getValue('ds_id')}</CopyToClipboard>
+          <CopyToClipboard text={row.original.ds_id}>
+            <BlurColumn text={row.original.ds_id} />
+            </CopyToClipboard>
         </div>
       );
     },
@@ -203,7 +210,9 @@ export const columns: ColumnDef<Account>[] = [
     cell: ({ row }) => {
       return (
         <div className="flex items-center">
-          <CopyToClipboard>{row.getValue('email')}</CopyToClipboard>
+          <CopyToClipboard text={row.original.email}>
+            <BlurColumn text={row.original.email} />
+          </CopyToClipboard>
         </div>
       );
     },

@@ -1,66 +1,34 @@
 # Easy Tool Kit
 
+<img src="./resources//logo.ico" width="200"  /> 
+
 Kit de ferramentas para gerenciar o download a descriptografia e processo de indexação de evidências.
 
-baixar https://github.com/izidorio/easy-tool-kit/releases/download/v0.1.5/easy-tool-kit-v0.1.5.zip
+### Siga as instruções para baixar, instar e utilizar.
 
-## Recommended IDE Setup
+1 - [click aqui para baixar a versão v0.1.7](https://github.com/izidorio/easy-tool-kit/releases/download/v0.1.5/easy-tool-kit-v0.1.7.zip)
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+2 - descompacte o arquivo .zip baixado na pasta de sua preferência. 
 
-## Project Setup
+3 - clique 2 vezes no executável `easy-tool-kit.exe`
 
-### Install
+4 - clique em Settings selecione o aquivo `git-bash.exe` e o arquivo `iped.exe`
 
-```bash
-$ npm install
-```
+> Caso você não tenha o Git instalado na sua máquina siga as instruções:
+abra o Powershell e execute o comando abaixo para instalar o Git Bash: `winget install --id Git.Git -e --source winget`
 
-### Development
+> Você vai precisar do IPED. Caso você não tenha o IPED instalado siga o [tutoria da AFD clicando aqui](https://academiadeforensedigital.com.br/sistema-iped-forense/)
 
-```bash
-$ npm run dev
-```
+<video src="./assests/01-configuracao.mp4" width="400" controls ></video/>
 
-### Build
+5 - Criar nuvem
+<video src="./assests/02-criar-nuvem.mp4" width="400" controls > <video/>
 
-```bash
-# For windows
-$ npm run build:win
+6 - Nomear alvo
+<video src="./assests/03-criar-nuvem.mp4" width="400" controls > <video/>
 
-# For macOS
-$ npm run build:mac
+7 - Baixar nuvem
+<video src="./assests/04-criar-nuvem.mp4" width="400" controls > <video/>
 
-# For Linux
-$ npm run build:linux
-```
-
-### Git actions
-
-alterar a repositório em: Settings > Actions > General > Workflow permissions
-
-de `Read repository ...` para `Read and write permissions` e Salvar
-
-incluir arquivo `.github/workflows/release.yml`
-
-incluir o script
-
-```json
-"scripts": {
-    // ...
-    "release": "electron-builder --publish always"
-```
-
-atualize a versão do atual do projeto em `package.json`
-
-```json
-"version": "0.0.1"
-```
-
-rodar o script
-
-```cmd
-git tag v0.0.1
-git push
-git push --tags
-```
+8 - Indexar nuvem com o IPED
+<video src="./assests/05-criar-nuvem.mp4" width="400" controls > <video/>

@@ -12,16 +12,16 @@ import {
 import { ModeToggle } from '../mode-toggle';
 import { SidebarTrigger } from '../ui/sidebar';
 
-interface BreadcrumbProps {
+interface BreadcrumbProps extends React.HTMLAttributes<HTMLDivElement> {
   links: { name: string; href?: string }[] | string;
 }
 
-export function Breadcrumb({ links }: BreadcrumbProps) {
+export function Breadcrumb({ links, ...props }: BreadcrumbProps) {
   const isString = typeof links === 'string';
 
   return (
     <header className="flex items-center justify-between p-1 px-4">
-      <div className="flex items-center ">
+      <div className="flex items-center " {...props}>
         <SidebarTrigger />
         <Separator orientation="vertical" className="h-3 m-2 bg-muted-foreground" />
 

@@ -14,6 +14,7 @@ asarUnpack:
 win:
   executableName: easy-tool-kit
   icon: build/icon.ico
+  sign: false #Desabilitar assinatura de certificado
 nsis:
   artifactName: ${name}-${version}-setup.${ext}
   shortcutName: ${productName}
