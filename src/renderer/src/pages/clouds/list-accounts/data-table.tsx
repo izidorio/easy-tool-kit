@@ -16,6 +16,7 @@ import { Button } from '@/renderer/src/components/ui/button';
 import { toast } from '@/renderer/src/hooks/use-toast';
 import { ScrollArea } from '@/renderer/src/components/ui/scroll-area';
 
+
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
@@ -25,6 +26,7 @@ interface DataTableProps<TData, TValue> {
 export function DataTable<TData, TValue>({ columns, data, isLoading }: DataTableProps<TData, TValue>) {
   const [globalFilter, setGlobalFilter] = useState('');
   const [sorting, setSorting] = useState<SortingState>([]);
+ 
 
   const table = useReactTable({
     data,
@@ -68,7 +70,7 @@ export function DataTable<TData, TValue>({ columns, data, isLoading }: DataTable
 
   return (
     <div className="w-full">
-      <div className="flex items-center justify-between py-4">
+      <div className="flex items-center justify-between mb-4">
         <Input
           placeholder="Filtrar por: DSID, Confidential e email"
           value={globalFilter ?? ''}

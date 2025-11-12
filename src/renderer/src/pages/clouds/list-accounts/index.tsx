@@ -61,7 +61,6 @@ export function ListAccounts() {
       />
       <Layout.Content className="py-0 h-[calc(100vh-80px)] w-full">
         <DataTable columns={columns} data={accounts} isLoading={isLoading} />
-
         <DialogTarget />
       </Layout.Content>
     </Layout.Root>

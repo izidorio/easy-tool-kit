@@ -41,7 +41,7 @@ Kit de ferramentas para gerenciar o download, a descriptografia e o processo de 
 
 ### 5. Criar nuvem
 
-<img src="./assests/02-criar-nuvem.gif" width="400" />
+<img src="./assests/02-criar.gif" width="400" />
 
 ### 6. Nomear alvo
 

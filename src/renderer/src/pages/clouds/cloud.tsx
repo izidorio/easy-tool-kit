@@ -13,6 +13,7 @@ import * as Check from '@renderer/components/form/input-checkbox';
 import { useQuery } from '@tanstack/react-query';
 import { PasswordInput } from '../../components/form/password-input';
 import * as Layout from '@renderer/components/layouts';
+import { useTarget } from './list-accounts/useTargets';
 
 const FormSchema = z.object({
   name: z.string(),
@@ -32,8 +33,10 @@ const FormSchema = z.object({
 
 export function Cloud() {
   const { id } = useParams<{ id: string }>();
+  const { setBlurColumn, blurColumn } = useTarget();
   const nav = useNavigate();
 
+  
   const methods = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -73,15 +76,6 @@ export function Cloud() {
     }
   }, [error]);
 
-  // const handleSelectFile = async () => {
-  //   const path = await window.api.selectFile([{ name: 'csv', extensions: ['csv'] }]);
-  //   if (path) {
-  //     methods.setValue('csv_links', path);
-  //     return;
-  //   }
-
-  //   methods.setValue('csv_links', '');
-  // };
 
   const handleSelectDirectoryOutput = async () => {
     const path = await window.api.selectDirectory();
@@ -143,19 +137,8 @@ export function Cloud() {
                 onClick={handleSelectDirectoryOutput}
               />
 
-
               <Input name="download_link" type="url" label="Link de download da nuvem" className="col-span-6" />
               <PasswordInput name="password" label="Senha para descriptografar" className="col-span-6" />
-
-              {/* <Input
-                name="csv_links"
-                label='Selecione o arquivo "account-download-details.csv" com os links'
-                readOnly
-                className="col-span-full"
-                placeholder="click aqui para selecionar"
-                onClick={handleSelectFile}
-              />
-              */}
 
               <div
                 className="col-span-12 flex items-center pt-1 data-[show=false]:hidden"
@@ -176,6 +159,15 @@ export function Cloud() {
             </form>
           </FormProvider>
           <WatchLogs height={120} className="w-[800px]" />
+
+
+        <div 
+        onClick={() => setBlurColumn(!blurColumn)}
+        className="text-xs p-2 opacity-0 transition-opacity duration-300 hover:opacity-100 cursor-pointer">
+          {blurColumn ? 'Desativar blur column' : 'Ativar blur column'}
+        </div>
+
+
         </div>
       </Layout.Content>
     </Layout.Root>
