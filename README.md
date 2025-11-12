@@ -2,7 +2,7 @@
 
 <img src="./resources/logo.ico" width="200" /> 
 
-> **Kit completo de ferramentas** para orquestrar o download, a descriptografia e o processo de indexação de evidências digitais de forma simples e eficiente.
+> **Kit completo de ferramentas** para orquestrar o download, a descriptografia e o processo de indexação de evidências digitais de forma simples.
 
 ---
 
@@ -16,7 +16,7 @@ Antes de começar, certifique-se de ter instalado os seguintes programas:
 
 Caso você não tenha o Git instalado na sua máquina, siga as instruções:
 
-Abra o PowerShell e execute o comando abaixo:
+Abra o PowerShell e execute o comando abaixo ou use o (link clicando aqui)[https://git-scm.com/install/windows]:
 
 ```powershell
 winget install --id Git.Git -e --source winget
