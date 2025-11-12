@@ -1,56 +1,96 @@
-# Easy Tool Kit
+# 🛠️ Easy Tool Kit
 
 <img src="./resources/logo.ico" width="200" /> 
 
-Kit de ferramentas para gerenciar o download, a descriptografia e o processo de indexação de evidências.
+> **Kit completo de ferramentas** para orquestra o download, a descriptografia e o processo de indexação de evidências digitais de forma simples.
+
+---
 
 ## 📋 Instalação e Configuração
 
-### Siga as instruções para baixar, instalar e utilizar:
+### ⚙️ Pré-requisitos
 
-1. **[Clique aqui para baixar a versão v0.1.7](https://github.com/izidorio/easy-tool-kit/releases/download/v0.1.7/easy-tool-kit-v0.1.7.zip)**
+Antes de começar, certifique-se de ter instalado os seguintes programas:
 
-2. Descompacte o arquivo `.zip` baixado na pasta de sua preferência.
+#### 🔧 **1. Git Bash**
 
-3. Acesse a pasta e dê um duplo clique no executável `easy-tool-kit.exe`.
-   
-   > **Dica:** Para facilitar o acesso, você pode:
-   > - Clicar com o botão direito sobre o ícone na barra de tarefas e selecionar "Fixar na barra de tarefas"
-   > - Criar um atalho na sua área de trabalho
+Caso você não tenha o Git instalado na sua máquina, siga as instruções:
 
-4. Clique em **Settings** e selecione os arquivos:
-   - `git-bash.exe`
-   - `iped.exe`
+Abra o PowerShell e execute o comando abaixo:
 
-   <img src="./assests/01-configuracao.gif" width="400" />
+```powershell
+winget install --id Git.Git -e --source winget
+```
 
-   > **Instalação do Git Bash:**
-   > 
-   > Caso você não tenha o Git instalado na sua máquina, siga as instruções:
-   > 
-   > Abra o PowerShell e execute o comando abaixo:
-   > ```powershell
-   > winget install --id Git.Git -e --source winget
-   > ```
+#### 🔐 **2. Gpg4win (Kleopatra)**
 
-   > **Instalação do IPED:**
-   > 
-   > Você vai precisar do IPED. Caso você não tenha o IPED instalado, siga o [tutorial da AFD clicando aqui para instalar o IPED](https://academiadeforensedigital.com.br/sistema-iped-forense/)
+Você vai precisar do Gpg4win (Kleopatra) para descriptografar os arquivos `.gpg`
+
+Caso você não tenha o Gpg4win instalado na sua máquina, clique no link abaixo:
+
+**[📥 Clique aqui para baixar o Gpg4win](https://www.gpg4win.org/download.html)**
+
+#### 🔍 **3. IPED**
+
+Você vai precisar do IPED para indexação de evidências.
+
+Caso você não tenha o IPED instalado na sua máquina, siga o tutorial da AFD abaixo:
+
+**[📚 clicando aqui e siga o tutorial da AFD para instalar o IPED](https://academiadeforensedigital.com.br/sistema-iped-forense/)**
+
+---
+
+### 🚀 Siga as instruções para baixar, instalar e utilizar:
+
+#### **1. Download**
+
+**[⬇️ Clique aqui para baixar a versão v0.1.7](https://github.com/izidorio/easy-tool-kit/releases/download/v0.1.7/easy-tool-kit-v0.1.7.zip)**
+
+#### **2. Descompactar**
+
+Descompacte o arquivo `.zip` baixado na pasta de sua preferência.
+
+#### **3. Executar**
+
+Acesse a pasta e dê um duplo clique no executável `easy-tool-kit.exe`.
+
+> 💡 **Dica:** Para facilitar o acesso, você pode:
+> - Clicar com o botão direito sobre o ícone na barra de tarefas e selecionar "Fixar na barra de tarefas"
+> - Criar um atalho na sua área de trabalho
+
+#### **4. Configurar**
+
+Clique em **Settings** e selecione os arquivos:
+- `git-bash.exe`
+- `iped.exe`
+
+<img src="./assests/01-configuracao.gif" width="400" />
+
+
+---
 
 ## 🚀 Como Usar
 
-### 5. Criar nuvem
+### **5. ☁️ Criar Nuvem**
+
+Crie uma nova nuvem para organizar suas evidências.
 
 <img src="./assests/02-criar-nuvem.gif" width="400" />
 
-### 6. Nomear alvo
+### **6. 🏷️ Nomear Alvo**
+
+Defina um nome descritivo para o alvo da investigação.
 
 <img src="./assests/03-nomear-alvo.gif" width="400" />
 
-### 7. Baixar nuvem
+### **7. ⬇️ Baixar Nuvem**
+
+Filtre e baixe os arquivos da nuvem selecionada.
 
 <img src="./assests/04-filtrar-baixar-nuvem.gif" width="400" />
 
-### 8. Indexar nuvem com o IPED
+### **8. 🔍 Indexar Nuvem com o IPED**
+
+Processe e indexe os arquivos baixados usando o IPED para análise forense.
 
 <img src="./assests/05-filtrar-indexar-nuvem.gif" width="400" />
