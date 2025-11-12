@@ -16,7 +16,7 @@ Antes de começar, certifique-se de ter instalado os seguintes programas:
 
 Caso você não tenha o Git instalado na sua máquina, siga as instruções:
 
-Abra o PowerShell e execute o comando abaixo ou use o [link clicando aqui(https://git-scm.com/install/windows):
+Abra o PowerShell e execute o comando abaixo ou use o [link clicando aqui](https://git-scm.com/install/windows):
 
 ```powershell
 winget install --id Git.Git -e --source winget
