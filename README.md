@@ -1,8 +1,8 @@
-# 🛠️ Easy Tool Kit
+# Easy Tool Kit
 
 <img src="./resources/logo.ico" width="200" /> 
 
-> **Kit completo de ferramentas** para orquestra o download, a descriptografia e o processo de indexação de evidências digitais de forma simples.
+> **Kit completo de ferramentas** para orquestrar o download, a descriptografia e o processo de indexação de evidências digitais de forma simples e eficiente.
 
 ---
 
@@ -24,7 +24,7 @@ winget install --id Git.Git -e --source winget
 
 #### 🔐 **2. Gpg4win (Kleopatra)**
 
-Você vai precisar do Gpg4win (Kleopatra) para descriptografar os arquivos `.gpg`
+Você vai precisar do Gpg4win (Kleopatra) para descriptografar os arquivos `.gpg`.
 
 Caso você não tenha o Gpg4win instalado na sua máquina, clique no link abaixo:
 
@@ -36,11 +36,11 @@ Você vai precisar do IPED para indexação de evidências.
 
 Caso você não tenha o IPED instalado na sua máquina, siga o tutorial da AFD abaixo:
 
-**[📚 clicando aqui e siga o tutorial da AFD para instalar o IPED](https://academiadeforensedigital.com.br/sistema-iped-forense/)**
+**[📚 Clique aqui e siga o tutorial da AFD para instalar o IPED](https://academiadeforensedigital.com.br/sistema-iped-forense/)**
 
 ---
 
-### 🚀 Siga as instruções para baixar, instalar e utilizar:
+### 🚀 Instalação
 
 #### **1. Download**
 
@@ -48,11 +48,11 @@ Caso você não tenha o IPED instalado na sua máquina, siga o tutorial da AFD a
 
 #### **2. Descompactar**
 
-Descompacte o arquivo `.zip` baixado na pasta de sua preferência.
+Descompacte o arquivo `.zip` baixado em uma pasta de sua preferência.
 
 #### **3. Executar**
 
-Acesse a pasta e dê um duplo clique no executável `easy-tool-kit.exe`.
+Acesse a pasta e dê duplo clique no executável `easy-tool-kit.exe`.
 
 > 💡 **Dica:** Para facilitar o acesso, você pode:
 > - Clicar com o botão direito sobre o ícone na barra de tarefas e selecionar "Fixar na barra de tarefas"
@@ -85,7 +85,7 @@ Defina um nome descritivo para o alvo da investigação.
 
 ### **7. ⬇️ Baixar Nuvem**
 
-Filtre e baixe os arquivos da nuvem selecionada.
+Filtre e baixe os arquivos da nuvem selecionada conforme necessário.
 
 <img src="./assests/04-filtrar-baixar-nuvem.gif" width="400" />
 
