@@ -16,7 +16,7 @@ Antes de começar, certifique-se de ter instalado os seguintes programas:
 
 Caso você não tenha o Git instalado na sua máquina, siga as instruções abaixo:
 
-Abra o PowerShell e execute o comando abaixo ou [clique aqui para baixar](https://git-scm.com/install/windows):
+Abra o PowerShell e execute o comando abaixo ou <a href="https://git-scm.com/install/windows" target="_blank" rel="noopener noreferrer">clique aqui para baixar</a>:
 
 ```powershell
 winget install --id Git.Git -e --source winget
@@ -28,7 +28,7 @@ Você precisará do Gpg4win (Kleopatra) para descriptografar os arquivos `.gpg`.
 
 Caso você não tenha o Gpg4win instalado na sua máquina, clique no link abaixo:
 
-**[📥 Clique aqui para baixar o Gpg4win](https://www.gpg4win.org/download.html)**
+**<a href="https://www.gpg4win.org/download.html" target="_blank" rel="noopener noreferrer">📥 Clique aqui para baixar o Gpg4win</a>**
 
 #### 🔍 **3. IPED**
 
@@ -36,7 +36,7 @@ Você precisará do IPED para indexação de evidências.
 
 Caso você não tenha o IPED instalado na sua máquina, siga o tutorial da AFD abaixo:
 
-**[📚 Clique aqui e siga o tutorial da AFD para instalar o IPED](https://academiadeforensedigital.com.br/sistema-iped-forense/)**
+**<a href="https://academiadeforensedigital.com.br/sistema-iped-forense/" target="_blank" rel="noopener noreferrer">📚 Clique aqui e siga o tutorial da AFD para instalar o IPED</a>**
 
 ---
 
@@ -44,7 +44,7 @@ Caso você não tenha o IPED instalado na sua máquina, siga o tutorial da AFD a
 
 #### **1. Download**
 
-**[⬇️ Clique aqui para baixar a versão v0.1.7](https://github.com/izidorio/easy-tool-kit/releases/download/v0.1.7/easy-tool-kit.zip)**
+**<a href="https://github.com/izidorio/easy-tool-kit/releases/download/v0.1.7/easy-tool-kit.zip" target="_blank" rel="noopener noreferrer">⬇️ Clique aqui para baixar a versão v0.1.7</a>**
 
 #### **2. Descompactar**
 
