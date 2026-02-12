@@ -40,7 +40,11 @@ ipcMain.handle('ipc-decrypt-directory', async (_, { input_dir, output_dir, passw
         }
 
         sendLog(`Processamento concluído: ${successCount} sucesso(s), ${errorCount} erro(s)`);
-        sendLog(`Erros: ${fileErrors.join('\n')}`);
+
+        fileErrors.map(fileError => {
+            sendLog(`Erro ao descriptografar ${fileError}`);
+        });
+
         
         if (errorCount > 0 && successCount === 0) {
             return new Error(`Erro ao descriptografar todos os arquivos do diretório`);
