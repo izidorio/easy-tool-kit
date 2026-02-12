@@ -1,7 +1,66 @@
-import { readFileSync, writeFileSync } from 'node:fs';
+import {
+  readFileSync,
+  writeFileSync,
+  createWriteStream,
+  openSync,
+  readSync,
+  closeSync,
+} from 'node:fs';
+import { createReadStream } from 'node:fs';
+import { pipeline } from 'node:stream/promises';
+import { Readable } from 'node:stream';
 import * as openpgp from 'openpgp';
 import { sendLog } from './send-logs';
 import fs from 'node:fs';
+
+const ARMOR_HEADER = '-----BEGIN PGP ';
+const ARMOR_HEADER_BYTES = 15;
+
+/** Lê só os primeiros bytes do arquivo para detectar formato (armored vs binário). */
+function readFirstBytes(filePath: string, length: number): Buffer {
+  const fd = openSync(filePath, 'r');
+  try {
+    const buf = Buffer.alloc(length);
+    const n = readSync(fd, buf, 0, length, 0);
+    return n < length ? buf.subarray(0, n) : buf;
+  } finally {
+    closeSync(fd);
+  }
+}
+
+/** Cria um ReadableStream<string> do conteúdo armored do arquivo (streaming, sem string gigante). */
+function createArmoredMessageStream(filePath: string): ReadableStream<string> {
+  const head = readFirstBytes(filePath, ARMOR_HEADER_BYTES);
+  const restStream = createReadStream(filePath, { start: ARMOR_HEADER_BYTES });
+
+  const binaryStream = new ReadableStream<Uint8Array>({
+    start(controller) {
+      controller.enqueue(new Uint8Array(head));
+      restStream.on('data', (chunk: string | Buffer) => {
+        const bytes =
+          typeof chunk === 'string'
+            ? new TextEncoder().encode(chunk)
+            : new Uint8Array(chunk);
+        controller.enqueue(bytes);
+      });
+      restStream.on('end', () => controller.close());
+      restStream.on('error', (err) => controller.error(err));
+    },
+  });
+
+  const decoder = new TextDecoder();
+  return binaryStream.pipeThrough(
+    new TransformStream<Uint8Array, string>({
+      transform(chunk, controller) {
+        controller.enqueue(decoder.decode(chunk, { stream: true }));
+      },
+      flush(controller) {
+        const tail = decoder.decode();
+        if (tail) controller.enqueue(tail);
+      },
+    })
+  );
+}
 
 /**
  * Decrypts a file .gpg using the provided passphrase.
@@ -20,8 +79,18 @@ export async function decryptFile(
   remove_gpg: boolean = false
 ) {
   try {
-    const fileData = readFileSync(filePath, 'utf8');
-    const message = await openpgp.readMessage({ armoredMessage: fileData });
+    const head = readFirstBytes(filePath, ARMOR_HEADER_BYTES);
+    const isArmored =
+      head.length >= ARMOR_HEADER_BYTES &&
+      head.toString('ascii') === ARMOR_HEADER;
+
+    const message = isArmored
+      ? await openpgp.readMessage({
+          armoredMessage: createArmoredMessageStream(filePath),
+        })
+      : await openpgp.readMessage({
+          binaryMessage: new Uint8Array(readFileSync(filePath)),
+        });
 
     const { data: decryptedData } = await openpgp.decrypt({
       message,
@@ -29,8 +98,17 @@ export async function decryptFile(
       format: 'binary',
     });
 
-    writeFileSync(output_dir + '.zip', Buffer.from(decryptedData));
-    //writeFileSync(output_dir, Buffer.from(decryptedData));
+    const outputPath = output_dir + '.zip';
+    if (decryptedData instanceof Uint8Array) {
+      writeFileSync(outputPath, Buffer.from(decryptedData));
+    } else {
+      // openpgp retorna Web ReadableStream; Node Readable.fromWeb aceita em runtime
+      const nodeStream = Readable.fromWeb(decryptedData as Parameters<typeof Readable.fromWeb>[0]);
+      await pipeline(
+        nodeStream,
+        createWriteStream(outputPath)
+      );
+    }
 
     sendLog(`arquivo descriptografado com sucesso: ${output_dir}`);
     if (remove_gpg) {

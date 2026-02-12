@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './styles/global.css';
 
 import { ThemeProvider } from '@renderer/components/theme-provider';
+
+document.title = `Easy - ${__APP_VERSION__}`;
 import { Routes } from './routes';
 import { Providers } from './providers/providers';
 

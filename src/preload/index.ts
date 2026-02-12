@@ -39,6 +39,8 @@ export const api = {
   onProgress: (callback: (progress: any) => void) => ipcRenderer.on('progress', (_, progress) => callback(progress)),
   watchLog: (callback: (_, log: string) => void) => ipcRenderer.on('log', callback),
   watchProgress: (callback: (_, log: string) => void) => ipcRenderer.on('progress', callback),
+  decryptDirectory: (data: { input_dir: string; output_dir: string; password: string }): Promise<any> =>
+    ipcRenderer.invoke('ipc-decrypt-directory', data),
 };
 
 if (process.contextIsolated) {

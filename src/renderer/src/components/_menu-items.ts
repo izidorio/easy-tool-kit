@@ -1,4 +1,4 @@
-import { Inbox, Settings, CloudLightning, Users } from 'lucide-react';
+import { Inbox, Settings, CloudLightning, Users, PackageOpen } from 'lucide-react';
 
 interface Item {
   title: string;
@@ -21,6 +21,11 @@ export const items: Item[] = [
     title: 'Alvos',
     path: '/targets',
     icon: Users,
+  },
+  {
+    title: 'Descriptografar',
+    path: '/decrypt-evidence',
+    icon: PackageOpen,
   },
   {
     title: 'Settings',

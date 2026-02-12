@@ -1,0 +1,166 @@
+Encontrados 50 arquivos .gpg no diretório
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-ACCOUNT-30269950.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-ACCOUNT-30269950
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-BACKUP-30271508.zip.gpg
+Encontrados 50 arquivos .gpg no diretório
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-ACCOUNT-30269950.zip.gpg
+erro ao descriptografar o arquivo: Error during parsing. This message / key probably does not conform to a valid OpenPGP format.
+Erro ao descriptografar 1895382-ACCOUNT-30269950.zip.gpg: Erro ao descriptografar o arquivo: Error during parsing. This message / key probably does not conform to a valid OpenPGP format.
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-BACKUP-30271508.zip.gpg
+erro ao descriptografar o arquivo: Error during parsing. This message / key probably does not conform to a valid OpenPGP format.
+Erro ao descriptografar 1895382-BACKUP-30271508.zip.gpg: Erro ao descriptografar o arquivo: Error during parsing. This message / key probably does not conform to a valid OpenPGP format.
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-BACKUP-30271509.zip.gpg
+erro ao descriptografar o arquivo: Error during parsing. This message / key probably does not conform to a valid OpenPGP format.
+Erro ao descriptografar 1895382-BACKUP-30271509.zip.gpg: Erro ao descriptografar o arquivo: Error during parsing. This message / key probably does not conform to a valid OpenPGP format.
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-BACKUP-30271510.zip.gpg
+erro ao descriptografar o arquivo: Error during parsing. This message / key probably does not conform to a valid OpenPGP format.
+Erro ao descriptografar 1895382-BACKUP-30271510.zip.gpg: Erro ao descriptografar o arquivo: Error during parsing. This message / key probably does not conform to a valid OpenPGP format.
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-BOOKMARKS-30269925.zip.gpg
+erro ao descriptografar o arquivo: Error during parsing. This message / key probably does not conform to a valid OpenPGP format.
+Erro ao descriptografar 1895382-BOOKMARKS-30269925.zip.gpg: Erro ao descriptografar o arquivo: Error during parsing. This message / key probably does not conform to a valid OpenPGP format.
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CALENDARS-30269920.zip.gpg
+erro ao descriptografar o arquivo: Error during parsing. This message / key probably does not conform to a valid OpenPGP format.
+Erro ao descriptografar 1895382-CALENDARS-30269920.zip.gpg: Erro ao descriptografar o arquivo: Error during parsing. This message / key probably does not conform to a valid OpenPGP format.
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269986.zip.gpg
+Encontrados 50 arquivos .gpg no diretório
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-ACCOUNT-30269950.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-ACCOUNT-30269950
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-BACKUP-30271508.zip.gpg
+erro ao descriptografar o arquivo: Cannot create a string longer than 0x1fffffe8 characters
+Erro ao descriptografar 1895382-BACKUP-30271508.zip.gpg: Erro ao descriptografar o arquivo: Cannot create a string longer than 0x1fffffe8 characters
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-BACKUP-30271509.zip.gpg
+erro ao descriptografar o arquivo: Cannot create a string longer than 0x1fffffe8 characters
+Erro ao descriptografar 1895382-BACKUP-30271509.zip.gpg: Erro ao descriptografar o arquivo: Cannot create a string longer than 0x1fffffe8 characters
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-BACKUP-30271510.zip.gpg
+erro ao descriptografar o arquivo: Cannot create a string longer than 0x1fffffe8 characters
+Erro ao descriptografar 1895382-BACKUP-30271510.zip.gpg: Erro ao descriptografar o arquivo: Cannot create a string longer than 0x1fffffe8 characters
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-BOOKMARKS-30269925.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-BOOKMARKS-30269925
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CALENDARS-30269920.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CALENDARS-30269920
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269986.zip.gpg
+erro ao descriptografar o arquivo: Cannot create a string longer than 0x1fffffe8 characters
+Erro ao descriptografar 1895382-CLOUDPHOTOLIBRARY-30269986.zip.gpg: Erro ao descriptografar o arquivo: Cannot create a string longer than 0x1fffffe8 characters
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269987.zip.gpg
+erro ao descriptografar o arquivo: Cannot create a string longer than 0x1fffffe8 characters
+Erro ao descriptografar 1895382-CLOUDPHOTOLIBRARY-30269987.zip.gpg: Erro ao descriptografar o arquivo: Cannot create a string longer than 0x1fffffe8 characters
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269988.zip.gpg
+erro ao descriptografar o arquivo: File size (9506828720) is greater than 2 GiB
+Erro ao descriptografar 1895382-CLOUDPHOTOLIBRARY-30269988.zip.gpg: Erro ao descriptografar o arquivo: File size (9506828720) is greater than 2 GiB
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269989.zip.gpg
+erro ao descriptografar o arquivo: File size (3335167948) is greater than 2 GiB
+Erro ao descriptografar 1895382-CLOUDPHOTOLIBRARY-30269989.zip.gpg: Erro ao descriptografar o arquivo: File size (3335167948) is greater than 2 GiB
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269990.zip.gpg
+erro ao descriptografar o arquivo: Cannot create a string longer than 0x1fffffe8 characters
+Erro ao descriptografar 1895382-CLOUDPHOTOLIBRARY-30269990.zip.gpg: Erro ao descriptografar o arquivo: Cannot create a string longer than 0x1fffffe8 characters
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269991.zip.gpg
+erro ao descriptografar o arquivo: Cannot create a string longer than 0x1fffffe8 characters
+Erro ao descriptografar 1895382-CLOUDPHOTOLIBRARY-30269991.zip.gpg: Erro ao descriptografar o arquivo: Cannot create a string longer than 0x1fffffe8 characters
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269992.zip.gpg
+Encontrados 50 arquivos .gpg no diretório
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-ACCOUNT-30269950.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-ACCOUNT-30269950
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-BACKUP-30271508.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-BACKUP-30271508
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-BACKUP-30271509.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-BACKUP-30271509
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-BACKUP-30271510.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-BACKUP-30271510
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-BOOKMARKS-30269925.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-BOOKMARKS-30269925
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CALENDARS-30269920.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CALENDARS-30269920
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269986.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30269986
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269987.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30269987
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269988.zip.gpg
+erro ao descriptografar o arquivo: Error decrypting message: Array buffer allocation failed
+Erro ao descriptografar 1895382-CLOUDPHOTOLIBRARY-30269988.zip.gpg: Erro ao descriptografar o arquivo: Error decrypting message: Array buffer allocation failed
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269989.zip.gpg
+erro ao descriptografar o arquivo: Error decrypting message: Array buffer allocation failed
+Erro ao descriptografar 1895382-CLOUDPHOTOLIBRARY-30269989.zip.gpg: Erro ao descriptografar o arquivo: Error decrypting message: Array buffer allocation failed
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269990.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30269990
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269991.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30269991
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269992.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30269992
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269993.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30269993
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269994.zip.gpg
+erro ao descriptografar o arquivo: Error decrypting message: Array buffer allocation failed
+Erro ao descriptografar 1895382-CLOUDPHOTOLIBRARY-30269994.zip.gpg: Erro ao descriptografar o arquivo: Error decrypting message: Array buffer allocation failed
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269995.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30269995
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269996.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30269996
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269997.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30269997
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269998.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30269998
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30269999.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30269999
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30270000.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30270000
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30270001.zip.gpg
+erro ao descriptografar o arquivo: Error decrypting message: Array buffer allocation failed
+Erro ao descriptografar 1895382-CLOUDPHOTOLIBRARY-30270001.zip.gpg: Erro ao descriptografar o arquivo: Error decrypting message: Array buffer allocation failed
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30270002.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30270002
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30270003.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30270003
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30270004.zip.gpg
+erro ao descriptografar o arquivo: Error decrypting message: Array buffer allocation failed
+Erro ao descriptografar 1895382-CLOUDPHOTOLIBRARY-30270004.zip.gpg: Erro ao descriptografar o arquivo: Error decrypting message: Array buffer allocation failed
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30270005.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30270005
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30270006.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30270006
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30270007.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30270007
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30270008.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30270008
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30270009.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30270009
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30270010.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30270010
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30270011.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30270011
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CLOUDPHOTOLIBRARY-30270012.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CLOUDPHOTOLIBRARY-30270012
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-CONTACTS-30269922.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-CONTACTS-30269922
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-FACETIME-LOG-30269833.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-FACETIME-LOG-30269833
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-FMF-30269921.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-FMF-30269921
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-ICLOUD-LOG-30269831.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-ICLOUD-LOG-30269831
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-ICLOUDDRIVE-30269957.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-ICLOUDDRIVE-30269957
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-ICLOUDREMINDERS-30269914.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-ICLOUDREMINDERS-30269914
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-IMESSAGE-LOG-30269834.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-IMESSAGE-LOG-30269834
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-MAIL-30269939.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-MAIL-30269939
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-MAIL-LOG-30269832.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-MAIL-LOG-30269832
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-MAILHEADER-30269940.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-MAILHEADER-30269940
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-MAILHEADER-30269941.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-MAILHEADER-30269941
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-MAILHEADER-30269942.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-MAILHEADER-30269942
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-MAPS-30269918.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-MAPS-30269918
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-MESSAGESINICLOUD-30269928.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-MESSAGESINICLOUD-30269928
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-NOTES-30269951.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-NOTES-30269951
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-SAFARIBROWSINGHISTORY-30269949.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-SAFARIBROWSINGHISTORY-30269949
+Descriptografando arquivo: D:\032-05982-2025-TH\APLiC000006_APPLE_CONFIDENTIAL_1895382\1895382-SIGNINWITHAPPLE-30269916.zip.gpg
+arquivo descriptografado com sucesso: D:\032-05982-2025-TH\Nova_pasta\1895382-SIGNINWITHAPPLE-30269916
+Processamento concluído: 45 sucesso(s), 5 erro(s)

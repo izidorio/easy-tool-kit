@@ -9,6 +9,7 @@ import { Cloud } from '../pages/clouds/cloud';
 import { ListAccounts } from '../pages/clouds';
 import { ListTargets } from '../pages/clouds/targets';
 import { Protected } from './outlets/protected';
+import { DecryptEvidence } from '../pages/decript';
 
 export function Routes() {
   return (
@@ -28,6 +29,7 @@ export function Routes() {
           <Route path="/cloud/:id" element={<Cloud />} />
           <Route path="/list-accounts/:cloud_id" element={<ListAccounts />} />
 
+          <Route path="/decrypt-evidence" element={<DecryptEvidence />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/settings/customize" element={<Settings />} />

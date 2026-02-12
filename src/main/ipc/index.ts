@@ -23,5 +23,6 @@ import './ipc-target-import-csv';
 import './ipc-target-update';
 import './ipc-targets-export-csv';
 import './ipc-targets-get-all';
-
+import './ipc-decrypt-directory';
 import './ipc-toggle-always-on-top';
+
