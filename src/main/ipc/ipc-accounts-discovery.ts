@@ -65,8 +65,14 @@ ipcMain.handle(
 
           const result = await unzipFile(`${accountPath}.zip`);
 
-          const AppleID = readExcelCell(result, 'A8');
-          const DSID = readExcelCell(result, 'B8');
+          let AppleID = readExcelCell(result, 'A8');
+          if(AppleID === 'Apple ID') {
+            AppleID = readExcelCell(result, 'A9');
+          }
+          let DSID = readExcelCell(result, 'B8');
+          if(DSID === 'DS ID') {
+            DSID = readExcelCell(result, 'B9');
+          }
 
           const cloud_size = await getTotalSizeAccount(link.confidential_id);
           const { lastID } = await addAccount({
