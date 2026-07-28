@@ -173,7 +173,7 @@ echo " Arquivos salvos em:"
 echo " $PWD"	
 cat << 'EOF'
 
-    Pressione Enter para fechar o terminal...
+    Pressione Ctrl + C para fechar o terminal...
 ══════════════════════════════════════════════════
 EOF
 read -r -p ""
