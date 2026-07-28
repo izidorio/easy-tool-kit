@@ -2,6 +2,7 @@ import { app, shell, BrowserWindow } from 'electron';
 import { join } from 'node:path';
 import { electronApp, optimizer, is } from '@electron-toolkit/utils';
 import { registerRoute } from '../lib/electron-router-dom';
+import { setMainWindow } from './main-window';
 
 import './ipc';
 
@@ -18,6 +19,11 @@ function createWindow(): void {
       preload: join(__dirname, '../preload/index.js'),
       sandbox: false,
     },
+  });
+
+  setMainWindow(mainWindow);
+  mainWindow.on('closed', () => {
+    setMainWindow(null);
   });
 
   mainWindow.on('ready-to-show', () => {

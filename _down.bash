@@ -158,10 +158,22 @@ find "$OUTPUT_DIR" -type f -name "*.gpg" -exec rm -f {} \;
 
 echo "Todos os arquivos .gpg foram removidos."
 
-# Exibe mensagem de sucesso. informando o diretório de saída
-echo "########################################################################################"
-echo "Arquivos decriptografados e salvos em: $OUTPUT_DIR"
-echo "########################################################################################"
+echo
+cat << 'EOF'
+══════════════════════════════════════════════════
+   
+ ░█▀▀░█▀█░█▀▀░█░█░░░▀█▀░█▀█░█▀█░█░░░░░█░█░▀█▀░▀█▀
+ ░█▀▀░█▀█░▀▀█░░█░░░░░█░░█░█░█░█░█░░░░░█▀▄░░█░░░█░
+ ░▀▀▀░▀░▀░▀▀▀░░▀░░░░░▀░░▀▀▀░▀▀▀░▀▀▀░░░▀░▀░▀▀▀░░▀░
 
-# Encerrar o terminal
-# exit 0
+        Download concluído com sucesso!
+
+EOF
+echo " Arquivos salvos em:"	
+echo " $PWD"	
+cat << 'EOF'
+
+    Pressione Enter para fechar o terminal...
+══════════════════════════════════════════════════
+EOF
+read -r -p ""

@@ -14,9 +14,10 @@ export function WatchProgress({
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    window.api.watchProgress((_, log) => {
+    const unsubscribe = window.api.watchProgress((log) => {
       setLogs(log);
     });
+    return unsubscribe;
   }, []);
 
   useEffect(() => {

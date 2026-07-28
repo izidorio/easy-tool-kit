@@ -1,0 +1,14 @@
+import { BrowserWindow } from 'electron';
+
+let mainWindow: BrowserWindow | null = null;
+
+export function setMainWindow(window: BrowserWindow | null): void {
+  mainWindow = window;
+}
+
+export function getMainWindow(): BrowserWindow | null {
+  if (mainWindow && !mainWindow.isDestroyed()) {
+    return mainWindow;
+  }
+  return null;
+}

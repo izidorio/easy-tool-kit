@@ -114,7 +114,7 @@ export function DecryptEvidence() {
               </div>
             </form>
           </FormProvider>
-          <WatchLogs  className="w-[800px] min-h-[300px]" showToolbar={true} />
+          <WatchLogs className="w-[800px]" height={300} showToolbar={true} />
         </div>
       </Layout.Content>
     </Layout.Root>

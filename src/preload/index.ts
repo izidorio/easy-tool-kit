@@ -37,8 +37,20 @@ export const api = {
   exportTargets: (directoryPath: string): Promise<any> => ipcRenderer.invoke('ipc-targets-export-csv', directoryPath),
 
   onProgress: (callback: (progress: any) => void) => ipcRenderer.on('progress', (_, progress) => callback(progress)),
-  watchLog: (callback: (_, log: string) => void) => ipcRenderer.on('log', callback),
-  watchProgress: (callback: (_, log: string) => void) => ipcRenderer.on('progress', callback),
+  watchLog: (callback: (log: string) => void) => {
+    const listener = (_event: Electron.IpcRendererEvent, log: string) => callback(log);
+    ipcRenderer.on('log', listener);
+    return () => {
+      ipcRenderer.removeListener('log', listener);
+    };
+  },
+  watchProgress: (callback: (log: string) => void) => {
+    const listener = (_event: Electron.IpcRendererEvent, log: string) => callback(log);
+    ipcRenderer.on('progress', listener);
+    return () => {
+      ipcRenderer.removeListener('progress', listener);
+    };
+  },
   decryptDirectory: (data: { input_dir: string; output_dir: string; password: string }): Promise<any> =>
     ipcRenderer.invoke('ipc-decrypt-directory', data),
 };
