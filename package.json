@@ -1,12 +1,12 @@
 {
   "name": "easy-tool-kit",
-  "version": "0.1.11",
+  "version": "0.2.0",
   "description": "Kit de ferramentas para gerenciar o download a descriptografia e processo de indexação de evidências.",
   "main": "./out/main/index.js",
   "author": {
     "name": "Bento, Izidorio",
     "email": "izidorio@bento.dev.br",
-    "url": "https://izidorio.github.io/helper-app/"
+    "url": "https://github.com/izidorio"
   },
   "homepage": "https://github.com/izidorio/easy-tool-kit/",
   "scripts": {

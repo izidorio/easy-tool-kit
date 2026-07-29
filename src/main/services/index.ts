@@ -18,3 +18,5 @@ export * from './send-progress';
 export * from './create-directory';
 export * from './read-csv';
 export * from './discover-file-name-production';
+export * from './detect-production-file-type';
+export * from './parse-download-filename';

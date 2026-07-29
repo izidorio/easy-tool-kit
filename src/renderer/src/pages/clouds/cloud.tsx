@@ -158,7 +158,7 @@ export function Cloud() {
               </div>
             </form>
           </FormProvider>
-          <WatchLogs height={120} className="w-[800px]" />
+          <WatchLogs height={280} className="w-[800px]" />
 
 
         <div 

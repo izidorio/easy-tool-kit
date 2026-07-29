@@ -7,9 +7,20 @@ import { addLinks } from '../services/add-links';
 import { getAccountsByCloudId } from '../services/get-accounts-by-coud-id';
 import { downloadLink } from '../services/download-link';
 import { join } from 'node:path';
+import { rename } from 'node:fs/promises';
 import { decryptFile } from '../services/decrypt-file';
 import { unzipFile } from '../services/unzip-file';
-import { addAccount, createDirectoryIfNotExists, discoverFileNameProduction, readExcelCell, removeFiles } from '../services';
+import {
+  addAccount,
+  createDirectoryIfNotExists,
+  detectProductionFileType,
+  discoverFileNameProduction,
+  extensionFromFilename,
+  productionTypeFromExtension,
+  readExcelCell,
+  removeFiles,
+  sendLog,
+} from '../services';
 import { getTotalSizeAccount } from '../services/get-total-size-account';
 import { getTotalSizeCloud } from '../services/get-total-size-cloud';
 
@@ -29,21 +40,72 @@ ipcMain.handle(
         const OUTPUT_DIR = join(data.output_dir, "arquivo_de_producao");
         createDirectoryIfNotExists(OUTPUT_DIR);
 
+        const tempDownloadPath = join(OUTPUT_DIR, 'producao.download');
+
+        let downloadMeta;
         try {
-          await downloadLink(data.download_link, join(OUTPUT_DIR, "producao.gpg"));
+          downloadMeta = await downloadLink(data.download_link, tempDownloadPath);
         } catch (error: any) {
           return new Error(`Erro ao baixar o arquivo: ${error.message}`);
         }
 
+        sendLog(`✅ Download de produção concluído.`);
+       
+        let FILE_NAME = (downloadMeta.suggestedFilename || 'producao.zip').replace(extensionFromFilename(downloadMeta.suggestedFilename), '');
+        
+
+        let productionFileType;
+        try {
+          productionFileType = detectProductionFileType(tempDownloadPath);
+        } catch (error: any) {
+          return new Error(`Erro ao detectar tipo do arquivo: ${error.message}`);
+        }
+
+        const typeFromHeader = productionTypeFromExtension(
+          extensionFromFilename(downloadMeta.suggestedFilename)
+        );
+        if (typeFromHeader && typeFromHeader !== productionFileType) {
+          sendLog(
+            `Aviso: nome/URL sugere ${typeFromHeader}, mas o conteúdo do arquivo indica ${productionFileType}. Seguindo detecção por conteúdo.`
+          );
+        }
+
+        if (productionFileType === 'zip') {
+          try {
+            await rename(tempDownloadPath, join(OUTPUT_DIR, FILE_NAME + '.zip'));
+          } catch (error: any) {
+            return new Error(`Erro ao salvar arquivo ZIP: ${error.message}`);
+          }
+          sendLog('');
+          sendLog('⚠️ VERIFIQUE SE O LINK ESTÁ CORRETO OU SE A RESPOSTA É APENAS UMA BILHETAGEM ⚠️');
+          sendLog('');
+          sendLog('Pasta Account_Data_Links não encontrada. (não há links de contas para download)');
+          sendLog(`Arquivo de produção salvo em ${OUTPUT_DIR}\\${FILE_NAME + '.zip'};`);
+          sendLog(`Tente extrair o arquivo ${FILE_NAME + '.zip'} usando a senha fornecida e verifique se ele é uma bilhetagem.`);
+          
+          if (result) {
+            result.changes;
+          }
+          return new Error('Pasta Account_Data_Links não encontrada.');
+        }
+
+        FILE_NAME = downloadMeta.suggestedFilename || 'producao.gpg';
+
+        try {
+          await rename(tempDownloadPath, join(OUTPUT_DIR, FILE_NAME + '.gpg'));
+        } catch (error: any) {
+          return new Error(`Erro ao preparar arquivo GPG: ${error.message}`);
+        }
+
         // descriptografar o arquivo
         try {
-          await decryptFile(join(data.output_dir, "arquivo_de_producao/producao.gpg"), join(data.output_dir, "arquivo_de_producao/producao"), data.password);
+          await decryptFile(join(data.output_dir, "arquivo_de_producao",FILE_NAME + '.gpg'), join(data.output_dir, "arquivo_de_producao/" + FILE_NAME), data.password);
         } catch (error: any) {
           return new Error(`Erro ao descriptografar o arquivo baixado: ${error.message}`);
         }
 
         try {
-          await unzipFile(join(data.output_dir, "arquivo_de_producao/producao.zip"));
+          await unzipFile(join(data.output_dir, "arquivo_de_producao/" + FILE_NAME + '.zip'));
         } catch (error: any) {
           return new Error(`Erro ao descompactar o arquivo descriptografado: ${error.message}`);
         }
