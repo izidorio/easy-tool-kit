@@ -1,6 +1,6 @@
 import { contextBridge, ipcRenderer } from 'electron';
 import { electronAPI } from '@electron-toolkit/preload';
-import { Account, Cloud, Link, Settings, Target } from '../types';
+import { Account, Cloud, Link, Settings, Target, AppUpdateCheckResult, AppUpdateProgress } from '../types';
 
 // Custom APIs for renderer
 export const api = {
@@ -53,6 +53,19 @@ export const api = {
   },
   decryptDirectory: (data: { input_dir: string; output_dir: string; password: string }): Promise<any> =>
     ipcRenderer.invoke('ipc-decrypt-directory', data),
+  checkAppUpdate: (): Promise<AppUpdateCheckResult> => ipcRenderer.invoke('ipc-app-update-check'),
+  downloadAppUpdate: (payload: { downloadUrl: string; latestVersion: string }): Promise<void | Error> =>
+    ipcRenderer.invoke('ipc-app-update-download', payload),
+  getAppVersion: (): Promise<string> => ipcRenderer.invoke('ipc-app-get-version'),
+  getAppUpdateLogPath: (): Promise<string> => ipcRenderer.invoke('ipc-app-update-log-path'),
+  logAppUpdate: (message: string): Promise<void> => ipcRenderer.invoke('ipc-app-update-log', message),
+  onAppUpdateProgress: (callback: (progress: AppUpdateProgress) => void) => {
+    const listener = (_event: Electron.IpcRendererEvent, progress: AppUpdateProgress) => callback(progress);
+    ipcRenderer.on('app-update-progress', listener);
+    return () => {
+      ipcRenderer.removeListener('app-update-progress', listener);
+    };
+  },
 };
 
 if (process.contextIsolated) {

@@ -78,13 +78,14 @@ export function Params() {
     });
   }
 
+
+
   return (
     <Layout.Root>
-      <Layout.Breadcrumb links={[{ name: 'Editar parâmetros', href: '#' }]} />
+      <Layout.Breadcrumb links={[{ name: 'Configurações', href: '#' }]} />
       <Layout.Content>
         <div className="flex flex-col items-start gap-4  w-[800px]">
-          <h1 className="">Editar parâmetros</h1>
-
+         
           <FormProvider {...methods}>
             <form onSubmit={methods.handleSubmit(onSubmit)} className="grid h-fit w-full grid-cols-12 gap-4">
               <Input

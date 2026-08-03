@@ -1,4 +1,13 @@
 #!/bin/bash
+################################################################################################################
+# File					:	release.bash
+# Usage				:	release.bash
+# Description		:	This script releases the application
+# Version 			: 	1.0
+# The script requires the following installations on the machine:
+#					BASH
+# $ bash release.bash
+################################################################################################################
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"

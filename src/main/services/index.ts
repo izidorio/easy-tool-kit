@@ -20,3 +20,6 @@ export * from './read-csv';
 export * from './discover-file-name-production';
 export * from './detect-production-file-type';
 export * from './parse-download-filename';
+export * from './compare-semver';
+export * from './check-app-update';
+export * from './apply-app-update';

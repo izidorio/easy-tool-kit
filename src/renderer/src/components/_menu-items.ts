@@ -28,7 +28,7 @@ export const items: Item[] = [
     icon: PackageOpen,
   },
   {
-    title: 'Settings',
+    title: 'Configurações',
     path: '/settings/params',
     icon: Settings,
   },

@@ -5,3 +5,4 @@ export * from './account';
 export * from './work-queue';
 export * from './settings';
 export * from './target';
+export * from './app-update';

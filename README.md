@@ -44,7 +44,7 @@ Caso você não tenha o IPED instalado na sua máquina, siga o tutorial da AFD a
 
 #### **1. Download**
 
-**<a href="https://github.com/izidorio/easy-tool-kit/releases/download/v0.2.0/easy-tool-kit.zip" target="_blank" rel="noopener noreferrer">⬇️ Clique aqui para baixar a versão v0.2.0</a>**
+**<a href="https://github.com/izidorio/easy-tool-kit/releases/download/v0.2.2/easy-tool-kit.zip" target="_blank" rel="noopener noreferrer">⬇️ Clique aqui para baixar a versão v0.2.2</a>**
 
 #### **2. Descompactar**
 
